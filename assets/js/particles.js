@@ -1,6 +1,6 @@
 ```javascript
 /* =========================================================
-   MOHAMMED PORTFOLIO
+   MOHAMMAD PORTFOLIO
    particles.js
    Lightweight animated background particles
    ========================================================= */
