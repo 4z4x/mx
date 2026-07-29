@@ -1,6 +1,7 @@
 ```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
 
@@ -11,432 +12,705 @@
 
     <meta
         name="description"
-        content="محمد | مبرمج مواقع، مطور بوتات Discord وTelegram، ومصمم."
+        content="محمد | مبرمج مواقع وبوتات Discord وTelegram ومصمم واجهات رقمية."
     >
 
     <meta
-        name="keywords"
-        content="محمد, مبرمج, Web Developer, Discord Bots, Telegram Bots, Designer, Portfolio"
+        name="theme-color"
+        content="#050505"
     >
 
-    <meta name="author" content="Mohammad">
+    <title>محمد | مبرمج ومصمم</title>
 
-    <title>محمد | Web Developer & Bot Developer</title>
 
-    <!-- Google Fonts -->
+    <!-- =====================================================
+         Google Fonts
+         ===================================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Font Awesome -->
+
+    <!-- =====================================================
+         Font Awesome
+         ===================================================== -->
+
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     >
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css"
+    >
+
 </head>
+
 
 <body>
 
-    <!-- =========================
-         Page Loader
-    ========================== -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
+
+    <!-- =====================================================
+         Animated Background
+         ===================================================== -->
+
+    <canvas
+        id="particles-canvas"
+        aria-hidden="true"
+    ></canvas>
 
 
-    <!-- =========================
-         Background
-    ========================== -->
-    <div class="background-effects">
+    <div
+        class="background-effects"
+        aria-hidden="true"
+    >
 
         <div class="background-grid"></div>
 
         <div class="glow glow-one"></div>
+
         <div class="glow glow-two"></div>
 
     </div>
 
 
-    <!-- =========================
+    <!-- =====================================================
+         Page Loader
+         ===================================================== -->
+
+    <div
+        class="page-loader"
+        aria-label="جاري تحميل الموقع"
+    >
+
+        <div class="loader">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
          Header
-    ========================== -->
-    <header class="header" id="header">
+         ===================================================== -->
 
-        <div class="container">
+    <header class="header">
 
-            <nav class="navbar">
-
-                <!-- Logo -->
-                <a href="#home" class="logo">
-                    <span class="logo-symbol">&lt;/&gt;</span>
-                    <span class="logo-name">MOHAMMED</span>
-                </a>
+        <div class="container navbar">
 
 
-                <!-- Desktop Navigation -->
-                <ul class="nav-menu" id="navMenu">
+            <!-- Logo -->
 
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active">
-                            الرئيسية
-                        </a>
-                    </li>
+            <a
+                href="#home"
+                class="logo"
+                aria-label="محمد"
+            >
 
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">
-                            عني
-                        </a>
-                    </li>
+                <span class="logo-symbol">
+                    M
+                </span>
 
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">
-                            المهارات
-                        </a>
-                    </li>
+                <span class="logo-name">
+                    MOHAMMED
+                </span>
 
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">
-                            الخدمات
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">
-                            المشاريع
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
-                            تواصل معي
-                        </a>
-                    </li>
-
-                </ul>
+            </a>
 
 
-                <!-- Header Button -->
-                <a href="#contact" class="header-button">
-                    <span>تواصل معي</span>
-                    <i class="fa-solid fa-arrow-left"></i>
-                </a>
+            <!-- Navigation -->
 
+            <nav
+                class="nav-menu"
+                aria-label="القائمة الرئيسية"
+            >
 
-                <!-- Mobile Menu -->
-                <button
-                    class="menu-toggle"
-                    id="menuToggle"
-                    aria-label="فتح القائمة"
-                    aria-expanded="false"
+                <a
+                    href="#home"
+                    class="nav-link active"
                 >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    الرئيسية
+                </a>
+
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
+                    عني
+                </a>
+
+                <a
+                    href="#skills"
+                    class="nav-link"
+                >
+                    المهارات
+                </a>
+
+                <a
+                    href="#services"
+                    class="nav-link"
+                >
+                    الخدمات
+                </a>
+
+                <a
+                    href="#projects"
+                    class="nav-link"
+                >
+                    المشاريع
+                </a>
+
+                <a
+                    href="#contact"
+                    class="nav-link"
+                >
+                    تواصل معي
+                </a>
 
             </nav>
+
+
+            <!-- Header Button -->
+
+            <a
+                href="#contact"
+                class="header-button"
+            >
+
+                ابدأ مشروعك
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+
+            <!-- Mobile Menu -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="فتح القائمة"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
     </header>
 
 
-    <!-- =========================
+    <!-- =====================================================
          Main
-    ========================== -->
+         ===================================================== -->
+
     <main>
 
 
-        <!-- =========================
+        <!-- =================================================
              Hero Section
-        ========================== -->
-        <section class="hero section" id="home">
+             ================================================= -->
 
-            <div class="container">
+        <section
+            class="hero section"
+            id="home"
+        >
 
-                <div class="hero-content">
-
-                    <!-- Hero Text -->
-                    <div class="hero-text">
-
-                        <div class="hero-badge">
-                            <span class="status-dot"></span>
-                            متاح للعمل على مشاريع جديدة
-                        </div>
+            <div class="container hero-content">
 
 
-                        <p class="hero-small-title">
-                            مرحباً، أنا
-                        </p>
+                <!-- Hero Text -->
+
+                <div class="hero-text reveal">
 
 
-                        <h1 class="hero-title">
+                    <div class="hero-badge">
+
+                        <span class="status-dot"></span>
+
+                        متاح حاليًا للعمل على مشاريع جديدة
+
+                    </div>
+
+
+                    <span class="hero-small-title">
+                        مرحبًا، أنا
+                    </span>
+
+
+                    <h1 class="hero-title">
+
+                        محمد
+
+                        <span
+                            class="title-outline"
+                            aria-hidden="true"
+                        >
                             محمد
-                            <span class="title-outline">
-                                محمد
-                            </span>
-                        </h1>
+                        </span>
+
+                    </h1>
 
 
-                        <h2 class="hero-subtitle">
-                            مبرمج مواقع ومطور بوتات ومصمم
-                        </h2>
+                    <h2 class="hero-subtitle">
+
+                        مبرمج مواقع وبوتات
+                        Discord وTelegram ومصمم
+
+                    </h2>
 
 
-                        <p class="hero-description">
-                            أعمل على تطوير مواقع ويب حديثة واحترافية،
-                            وبرمجة بوتات Discord وTelegram، بالإضافة
-                            إلى تصميم واجهات وتجارب رقمية تجمع بين
-                            البساطة والأداء والمظهر المميز.
-                        </p>
+                    <p class="hero-description">
+
+                        أعمل على تطوير مواقع حديثة،
+                        بوتات متقدمة لمنصات Discord وTelegram،
+                        وتجارب رقمية تجمع بين التصميم الأنيق
+                        والأداء الجيد وسهولة الاستخدام.
+
+                    </p>
 
 
-                        <!-- Hero Buttons -->
-                        <div class="hero-buttons">
+                    <!-- Hero Buttons -->
 
-                            <a href="#projects" class="btn btn-primary">
-                                <span>مشاهدة أعمالي</span>
-                                <i class="fa-solid fa-arrow-left"></i>
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+
+                            مشاهدة أعمالي
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                        </a>
+
+
+                        <a
+                            href="#contact"
+                            class="btn btn-outline"
+                        >
+
+                            تواصل معي
+
+                            <i class="fa-regular fa-paper-plane"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Hero Social -->
+
+                    <div class="hero-socials">
+
+                        <span class="social-label">
+                            تابعني:
+                        </span>
+
+
+                        <div class="social-links">
+
+
+                            <!-- Discord -->
+
+                            <a
+                                href="#"
+                                class="social-link discord"
+                                aria-label="Discord"
+                            >
+
+                                <i class="fa-brands fa-discord"></i>
+
                             </a>
 
-                            <a href="#contact" class="btn btn-outline">
-                                <span>تواصل معي</span>
-                                <i class="fa-regular fa-paper-plane"></i>
+
+                            <!-- Telegram -->
+
+                            <a
+                                href="#"
+                                class="social-link telegram"
+                                aria-label="Telegram"
+                            >
+
+                                <i class="fa-brands fa-telegram"></i>
+
+                            </a>
+
+
+                            <!-- GitHub -->
+
+                            <a
+                                href="#"
+                                class="social-link github"
+                                aria-label="GitHub"
+                            >
+
+                                <i class="fa-brands fa-github"></i>
+
+                            </a>
+
+
+                            <!-- Facebook -->
+
+                            <a
+                                href="#"
+                                class="social-link facebook"
+                                aria-label="Facebook"
+                            >
+
+                                <i class="fa-brands fa-facebook-f"></i>
+
+                            </a>
+
+
+                            <!-- X -->
+
+                            <a
+                                href="#"
+                                class="social-link x-twitter"
+                                aria-label="X"
+                            >
+
+                                <i class="fa-brands fa-x-twitter"></i>
+
+                            </a>
+
+
+                            <!-- Instagram -->
+
+                            <a
+                                href="#"
+                                class="social-link instagram"
+                                aria-label="Instagram"
+                            >
+
+                                <i class="fa-brands fa-instagram"></i>
+
                             </a>
 
                         </div>
 
+                    </div>
 
-                        <!-- Social Links -->
-                        <div class="hero-socials">
+                </div>
 
-                            <span class="social-label">
-                                تابعني:
+
+                <!-- Hero Visual -->
+
+                <div class="hero-visual reveal">
+
+
+                    <!-- Floating Card -->
+
+                    <div class="floating-card floating-card-one">
+
+                        <div class="floating-icon web-icon">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Web Development
+                            </strong>
+
+                            <span>
+                                Modern Websites
                             </span>
-
-                            <div class="social-links">
-
-                                <a
-                                    href="#"
-                                    class="social-link discord"
-                                    aria-label="Discord"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <i class="fa-brands fa-discord"></i>
-                                </a>
-
-                                <a
-                                    href="#"
-                                    class="social-link telegram"
-                                    aria-label="Telegram"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <i class="fa-brands fa-telegram"></i>
-                                </a>
-
-                                <a
-                                    href="#"
-                                    class="social-link github"
-                                    aria-label="GitHub"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-
-                                <a
-                                    href="#"
-                                    class="social-link facebook"
-                                    aria-label="Facebook"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-
-                                <a
-                                    href="#"
-                                    class="social-link x-twitter"
-                                    aria-label="X"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-
-                                <a
-                                    href="#"
-                                    class="social-link instagram"
-                                    aria-label="Instagram"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-
-                            </div>
 
                         </div>
 
                     </div>
 
 
-                    <!-- Hero Visual -->
-                    <div class="hero-visual">
+                    <!-- Code Card -->
 
-                        <div class="hero-card">
+                    <div class="hero-card">
 
-                            <div class="card-top">
 
-                                <div class="window-buttons">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                        <div class="card-top">
 
-                                <span class="card-title">
-                                    mohammed.dev
+                            <div class="window-buttons">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+
+                            <span class="card-title">
+                                mohammed.js
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-window">
+
+
+                            <span class="code-line">
+
+                                <span class="code-number">
+                                    01
                                 </span>
 
-                            </div>
+                                <span class="code-keyword">
+                                    const
+                                </span>
+
+                                <span class="code-variable">
+                                    developer
+                                </span>
+
+                                <span class="code-symbol">
+                                    =
+                                </span>
+
+                                <span class="code-bracket">
+                                    {
+                                </span>
+
+                            </span>
 
 
-                            <div class="code-window">
+                            <span class="code-line indent">
 
-                                <div class="code-line">
-                                    <span class="code-number">01</span>
-                                    <span class="code-keyword">const</span>
-                                    <span class="code-variable">developer</span>
-                                    <span class="code-symbol">=</span>
-                                    <span class="code-bracket">{</span>
-                                </div>
+                                <span class="code-number">
+                                    02
+                                </span>
 
-                                <div class="code-line indent">
-                                    <span class="code-number">02</span>
-                                    <span class="code-property">name</span>
-                                    <span class="code-symbol">:</span>
-                                    <span class="code-string">
-                                        "Mohammed"
-                                    </span>
-                                    <span class="code-symbol">,</span>
-                                </div>
+                                <span class="code-property">
+                                    name
+                                </span>
 
-                                <div class="code-line indent">
-                                    <span class="code-number">03</span>
-                                    <span class="code-property">role</span>
-                                    <span class="code-symbol">:</span>
-                                    <span class="code-string">
-                                        "Developer"
-                                    </span>
-                                    <span class="code-symbol">,</span>
-                                </div>
+                                <span class="code-symbol">
+                                    :
+                                </span>
 
-                                <div class="code-line indent">
-                                    <span class="code-number">04</span>
-                                    <span class="code-property">web</span>
-                                    <span class="code-symbol">:</span>
-                                    <span class="code-boolean">
-                                        true
-                                    </span>
-                                    <span class="code-symbol">,</span>
-                                </div>
+                                <span class="code-string">
+                                    "Mohammed"
+                                </span>
 
-                                <div class="code-line indent">
-                                    <span class="code-number">05</span>
-                                    <span class="code-property">discord</span>
-                                    <span class="code-symbol">:</span>
-                                    <span class="code-boolean">
-                                        true
-                                    </span>
-                                    <span class="code-symbol">,</span>
-                                </div>
+                                <span class="code-symbol">
+                                    ,
+                                </span>
 
-                                <div class="code-line indent">
-                                    <span class="code-number">06</span>
-                                    <span class="code-property">telegram</span>
-                                    <span class="code-symbol">:</span>
-                                    <span class="code-boolean">
-                                        true
-                                    </span>
-                                    <span class="code-symbol">,</span>
-                                </div>
+                            </span>
 
-                                <div class="code-line indent">
-                                    <span class="code-number">07</span>
-                                    <span class="code-property">design</span>
-                                    <span class="code-symbol">:</span>
-                                    <span class="code-boolean">
-                                        true
-                                    </span>
-                                </div>
 
-                                <div class="code-line">
-                                    <span class="code-number">08</span>
-                                    <span class="code-bracket">}</span>
-                                </div>
+                            <span class="code-line indent">
 
-                                <div class="code-line">
-                                    <span class="code-number">09</span>
-                                    <span class="code-keyword">console</span>
-                                    <span class="code-symbol">.</span>
-                                    <span class="code-function">
-                                        log
-                                    </span>
-                                    <span class="code-bracket">(</span>
-                                    <span class="code-string">
-                                        "Hello World!"
-                                    </span>
-                                    <span class="code-bracket">)</span>
-                                </div>
+                                <span class="code-number">
+                                    03
+                                </span>
 
-                            </div>
+                                <span class="code-property">
+                                    role
+                                </span>
+
+                                <span class="code-symbol">
+                                    :
+                                </span>
+
+                                <span class="code-string">
+                                    "Developer"
+                                </span>
+
+                                <span class="code-symbol">
+                                    ,
+                                </span>
+
+                            </span>
+
+
+                            <span class="code-line indent">
+
+                                <span class="code-number">
+                                    04
+                                </span>
+
+                                <span class="code-property">
+                                    web
+                                </span>
+
+                                <span class="code-symbol">
+                                    :
+                                </span>
+
+                                <span class="code-boolean">
+                                    true
+                                </span>
+
+                                <span class="code-symbol">
+                                    ,
+                                </span>
+
+                            </span>
+
+
+                            <span class="code-line indent">
+
+                                <span class="code-number">
+                                    05
+                                </span>
+
+                                <span class="code-property">
+                                    discordBots
+                                </span>
+
+                                <span class="code-symbol">
+                                    :
+                                </span>
+
+                                <span class="code-boolean">
+                                    true
+                                </span>
+
+                                <span class="code-symbol">
+                                    ,
+                                </span>
+
+                            </span>
+
+
+                            <span class="code-line indent">
+
+                                <span class="code-number">
+                                    06
+                                </span>
+
+                                <span class="code-property">
+                                    telegramBots
+                                </span>
+
+                                <span class="code-symbol">
+                                    :
+                                </span>
+
+                                <span class="code-boolean">
+                                    true
+                                </span>
+
+                                <span class="code-symbol">
+                                    ,
+                                </span>
+
+                            </span>
+
+
+                            <span class="code-line indent">
+
+                                <span class="code-number">
+                                    07
+                                </span>
+
+                                <span class="code-property">
+                                    design
+                                </span>
+
+                                <span class="code-symbol">
+                                    :
+                                </span>
+
+                                <span class="code-boolean">
+                                    true
+                                </span>
+
+                                <span class="code-symbol">
+                                    ,
+                                </span>
+
+                            </span>
+
+
+                            <span class="code-line">
+
+                                <span class="code-number">
+                                    08
+                                </span>
+
+                                <span class="code-bracket">
+                                    }
+                                </span>
+
+                            </span>
+
+
+                            <span class="code-line">
+
+                                <span class="code-number">
+                                    09
+                                </span>
+
+                                <span class="code-function">
+                                    buildSomethingGreat
+                                </span>
+
+                                <span class="code-symbol">
+                                    ();
+                                </span>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Second Floating Card -->
+
+                    <div class="floating-card floating-card-two">
+
+                        <div class="floating-icon bot-icon">
+
+                            <i class="fa-brands fa-discord"></i>
 
                         </div>
 
 
-                        <!-- Floating Cards -->
+                        <div>
 
-                        <div class="floating-card floating-card-one">
+                            <strong>
+                                Discord & Telegram
+                            </strong>
 
-                            <div class="floating-icon web-icon">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-
-                            <div>
-                                <strong>Web Development</strong>
-                                <span>Modern Websites</span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="floating-card floating-card-two">
-
-                            <div class="floating-icon bot-icon">
-                                <i class="fa-brands fa-discord"></i>
-                            </div>
-
-                            <div>
-                                <strong>Bot Development</strong>
-                                <span>Discord & Telegram</span>
-                            </div>
+                            <span>
+                                Bot Development
+                            </span>
 
                         </div>
 
@@ -447,88 +721,127 @@
             </div>
 
 
-            <!-- Scroll Indicator -->
-            <a href="#about" class="scroll-down">
+            <!-- Scroll Down -->
+
+            <a
+                href="#about"
+                class="scroll-down"
+                aria-label="انتقل للأسفل"
+            >
 
                 <span>
-                    اكتشف المزيد
+                    SCROLL
                 </span>
 
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-arrow-down"></i>
 
             </a>
 
         </section>
 
 
+        <!-- =================================================
+             About
+             ================================================= -->
 
-        <!-- =========================
-             About Section
-        ========================== -->
-        <section class="about section" id="about">
+        <section
+            class="about section"
+            id="about"
+        >
 
             <div class="container">
 
-                <div class="section-heading">
+
+                <div class="section-heading reveal">
 
                     <span class="section-number">
                         01
                     </span>
 
+
                     <div>
+
                         <span class="section-label">
-                            نبذة عني
+                            ABOUT ME
                         </span>
 
                         <h2 class="section-title">
                             من أنا؟
                         </h2>
+
                     </div>
+
+
+                    <p class="section-description">
+
+                        مطور يهتم بالتفاصيل،
+                        الأداء، وتجربة المستخدم.
+
+                    </p>
 
                 </div>
 
 
                 <div class="about-content">
 
-                    <div class="about-text">
+
+                    <div class="about-text reveal">
 
                         <p class="about-lead">
-                            أنا محمد، مبرمج ومصمم مهتم ببناء
-                            المشاريع الرقمية والمواقع الحديثة.
+
+                            أنا محمد، مبرمج ومصمم أعمل
+                            على تحويل الأفكار إلى مواقع
+                            وبوتات ومشاريع رقمية عملية.
+
                         </p>
+
 
                         <p>
-                            أعمل على تطوير مواقع ويب متجاوبة وسريعة،
-                            بالإضافة إلى إنشاء بوتات مخصصة لمنصات
-                            Discord وTelegram تساعد المجتمعات
-                            والمشاريع على الإدارة والأتمتة.
+
+                            أركز على بناء واجهات ويب عصرية
+                            ومتجاوبة مع مختلف الشاشات،
+                            بالإضافة إلى تطوير بوتات Discord
+                            وTelegram التي تساعد المجتمعات
+                            والمشاريع على إدارة المهام
+                            والأتمتة بطريقة منظمة.
+
                         </p>
+
 
                         <p>
-                            أهتم أيضاً بالتصميم وتجربة المستخدم،
-                            وأسعى دائماً إلى جعل المشروع واضحاً،
-                            مرتباً وسهل الاستخدام على مختلف الأجهزة.
+
+                            أحب العمل على المشاريع التي تحتاج
+                            إلى تصميم واضح، كود مرتب،
+                            وتجربة استخدام بسيطة وسريعة.
+
                         </p>
 
 
-                        <a href="#contact" class="text-link">
-                            لنعمل معاً
+                        <a
+                            href="#contact"
+                            class="text-link"
+                        >
+
+                            لنتحدث عن مشروعك
+
                             <i class="fa-solid fa-arrow-left"></i>
+
                         </a>
 
                     </div>
 
 
-                    <div class="about-stats">
+                    <div class="about-stats reveal">
+
 
                         <div class="stat-card">
 
                             <strong>
-                                03+
+                                01
                             </strong>
 
                             <span>
-                                مجالات أعمل بها
+                                Web Developer
                             </span>
 
                         </div>
@@ -537,11 +850,11 @@
                         <div class="stat-card">
 
                             <strong>
-                                24/7
+                                02
                             </strong>
 
                             <span>
-                                شغف بالتطوير
+                                Bot Developer
                             </span>
 
                         </div>
@@ -550,14 +863,15 @@
                         <div class="stat-card">
 
                             <strong>
-                                100%
+                                03
                             </strong>
 
                             <span>
-                                اهتمام بالتفاصيل
+                                Designer
                             </span>
 
                         </div>
+
 
                     </div>
 
@@ -568,150 +882,246 @@
         </section>
 
 
+        <!-- =================================================
+             Skills
+             ================================================= -->
 
-        <!-- =========================
-             Skills Section
-        ========================== -->
-        <section class="skills section" id="skills">
+        <section
+            class="skills section"
+            id="skills"
+        >
 
             <div class="container">
 
-                <div class="section-heading">
+
+                <div class="section-heading reveal">
 
                     <span class="section-number">
                         02
                     </span>
 
+
                     <div>
+
                         <span class="section-label">
-                            المهارات
+                            SKILLS
                         </span>
 
                         <h2 class="section-title">
-                            التقنيات التي أستخدمها
+                            المهارات والتقنيات
                         </h2>
+
                     </div>
+
+
+                    <p class="section-description">
+
+                        مجموعة من التقنيات التي أستخدمها
+                        في تطوير المشاريع.
+
+                    </p>
 
                 </div>
 
 
                 <div class="skills-grid">
 
+
                     <!-- HTML -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon html">
+
                             <i class="fa-brands fa-html5"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>HTML5</h3>
-                            <p>بناء هيكل المواقع</p>
+
+                            <h3>
+                                HTML5
+                            </h3>
+
+                            <p>
+                                Web Structure
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- CSS -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon css">
+
                             <i class="fa-brands fa-css3-alt"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>CSS3</h3>
-                            <p>تصميم وتنسيق الواجهات</p>
+
+                            <h3>
+                                CSS3
+                            </h3>
+
+                            <p>
+                                UI & Responsive
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- JavaScript -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon javascript">
+
                             <i class="fa-brands fa-js"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>JavaScript</h3>
-                            <p>التفاعل والوظائف البرمجية</p>
+
+                            <h3>
+                                JavaScript
+                            </h3>
+
+                            <p>
+                                Web Interaction
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- Python -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon python">
+
                             <i class="fa-brands fa-python"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>Python</h3>
-                            <p>البرمجة والبوتات والأتمتة</p>
+
+                            <h3>
+                                Python
+                            </h3>
+
+                            <p>
+                                Bots & Automation
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- PHP -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon php">
+
                             <i class="fa-brands fa-php"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>PHP</h3>
-                            <p>تطوير تطبيقات الويب</p>
+
+                            <h3>
+                                PHP
+                            </h3>
+
+                            <p>
+                                Backend Development
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- Discord -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon discord">
+
                             <i class="fa-brands fa-discord"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>Discord Bots</h3>
-                            <p>بوتات ومجتمعات Discord</p>
+
+                            <h3>
+                                Discord Bots
+                            </h3>
+
+                            <p>
+                                Community Systems
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- Telegram -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon telegram">
+
                             <i class="fa-brands fa-telegram"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>Telegram Bots</h3>
-                            <p>بوتات وخدمات Telegram</p>
+
+                            <h3>
+                                Telegram Bots
+                            </h3>
+
+                            <p>
+                                Automation & APIs
+                            </p>
+
                         </div>
 
                     </div>
 
 
                     <!-- Git -->
-                    <div class="skill-card">
+
+                    <div class="skill-card reveal">
 
                         <div class="skill-icon git">
+
                             <i class="fa-brands fa-git-alt"></i>
+
                         </div>
 
                         <div class="skill-info">
-                            <h3>Git</h3>
-                            <p>إدارة المشاريع والإصدارات</p>
+
+                            <h3>
+                                Git
+                            </h3>
+
+                            <p>
+                                Version Control
+                            </p>
+
                         </div>
 
                     </div>
@@ -723,147 +1133,246 @@
         </section>
 
 
+        <!-- =================================================
+             Services
+             ================================================= -->
 
-        <!-- =========================
-             Services Section
-        ========================== -->
-        <section class="services section" id="services">
+        <section
+            class="services section"
+            id="services"
+        >
 
             <div class="container">
 
-                <div class="section-heading">
+
+                <div class="section-heading reveal">
 
                     <span class="section-number">
                         03
                     </span>
 
+
                     <div>
+
                         <span class="section-label">
-                            الخدمات
+                            SERVICES
                         </span>
 
                         <h2 class="section-title">
                             ماذا أقدم؟
                         </h2>
+
                     </div>
+
+
+                    <p class="section-description">
+
+                        خدمات برمجية وتصميمية للمشاريع
+                        والمجتمعات الرقمية.
+
+                    </p>
 
                 </div>
 
 
                 <div class="services-grid">
 
-                    <!-- Web Development -->
-                    <article class="service-card">
 
-                        <div class="service-number">
+                    <!-- Service 01 -->
+
+                    <article class="service-card reveal">
+
+                        <span class="service-number">
                             01
-                        </div>
+                        </span>
+
 
                         <div class="service-icon">
-                            <i class="fa-solid fa-code"></i>
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
                         </div>
+
 
                         <h3>
                             تطوير المواقع
                         </h3>
 
+
                         <p>
-                            إنشاء مواقع احترافية ومتجاوبة مع
-                            مختلف الشاشات باستخدام أحدث تقنيات
-                            الويب.
+
+                            تصميم وتطوير مواقع حديثة ومتجاوبة
+                            مع الهواتف والكمبيوتر، مع اهتمام
+                            بالتفاصيل وتجربة المستخدم.
+
                         </p>
 
+
                         <div class="service-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                JS
+                            </span>
+
+                            <span>
+                                PHP
+                            </span>
+
                         </div>
 
                     </article>
 
 
-                    <!-- Discord Bots -->
-                    <article class="service-card">
+                    <!-- Service 02 -->
 
-                        <div class="service-number">
+                    <article class="service-card reveal">
+
+                        <span class="service-number">
                             02
-                        </div>
+                        </span>
+
 
                         <div class="service-icon discord-service">
+
                             <i class="fa-brands fa-discord"></i>
+
                         </div>
 
+
                         <h3>
-                            Discord Bots
+                            بوتات Discord
                         </h3>
 
+
                         <p>
-                            تطوير بوتات Discord مخصصة للإدارة،
-                            الحماية، الترفيه، التذاكر، الأنظمة
-                            والمجتمعات.
+
+                            بناء بوتات Discord مخصصة للمجتمعات
+                            والسيرفرات، مع أوامر وأنظمة إدارة
+                            وأتمتة حسب الحاجة.
+
                         </p>
 
+
                         <div class="service-tags">
-                            <span>Discord.js</span>
-                            <span>Node.js</span>
+
+                            <span>
+                                Discord
+                            </span>
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                API
+                            </span>
+
                         </div>
 
                     </article>
 
 
-                    <!-- Telegram Bots -->
-                    <article class="service-card">
+                    <!-- Service 03 -->
 
-                        <div class="service-number">
+                    <article class="service-card reveal">
+
+                        <span class="service-number">
                             03
-                        </div>
+                        </span>
+
 
                         <div class="service-icon telegram-service">
+
                             <i class="fa-brands fa-telegram"></i>
+
                         </div>
 
+
                         <h3>
-                            Telegram Bots
+                            بوتات Telegram
                         </h3>
 
+
                         <p>
-                            برمجة بوتات Telegram مخصصة للأتمتة
-                            والخدمات وإدارة المهام والتفاعل
-                            مع المستخدمين.
+
+                            تطوير بوتات Telegram للردود الآلية،
+                            الخدمات، الإدارة، التكامل مع APIs
+                            والمهام المتكررة.
+
                         </p>
 
+
                         <div class="service-tags">
-                            <span>Python</span>
-                            <span>API</span>
+
+                            <span>
+                                Telegram
+                            </span>
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                API
+                            </span>
+
                         </div>
 
                     </article>
 
 
-                    <!-- Design -->
-                    <article class="service-card">
+                    <!-- Service 04 -->
 
-                        <div class="service-number">
+                    <article class="service-card reveal">
+
+                        <span class="service-number">
                             04
-                        </div>
+                        </span>
+
 
                         <div class="service-icon design-service">
+
                             <i class="fa-solid fa-pen-ruler"></i>
+
                         </div>
+
 
                         <h3>
                             التصميم
                         </h3>
 
+
                         <p>
-                            تصميم واجهات ومحتوى بصري مناسب
-                            للمواقع والمشاريع الرقمية والمجتمعات.
+
+                            تصميم واجهات ومكونات بصرية مناسبة
+                            للمواقع والمشاريع الرقمية بأسلوب
+                            بسيط وداكن.
+
                         </p>
 
+
                         <div class="service-tags">
-                            <span>UI</span>
-                            <span>UX</span>
-                            <span>Design</span>
+
+                            <span>
+                                UI
+                            </span>
+
+                            <span>
+                                UX
+                            </span>
+
+                            <span>
+                                Branding
+                            </span>
+
                         </div>
 
                     </article>
@@ -875,35 +1384,43 @@
         </section>
 
 
+        <!-- =================================================
+             Projects
+             ================================================= -->
 
-        <!-- =========================
-             Projects Section
-        ========================== -->
-        <section class="projects section" id="projects">
+        <section
+            class="projects section"
+            id="projects"
+        >
 
             <div class="container">
 
-                <div class="section-heading section-heading-projects">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
 
                     <div>
 
-                        <span class="section-number">
-                            04
-                        </span>
-
                         <span class="section-label">
-                            أعمالي
+                            PROJECTS
                         </span>
 
                         <h2 class="section-title">
-                            بعض مشاريعي
+                            أعمال مختارة
                         </h2>
 
                     </div>
 
+
                     <p class="section-description">
-                        مجموعة من المشاريع التي عملت عليها
-                        في مجالات الويب والبوتات والتصميم.
+
+                        بعض النماذج التي يمكن استبدالها
+                        بمشاريعك الحقيقية.
+
                     </p>
 
                 </div>
@@ -911,45 +1428,68 @@
 
                 <div class="projects-grid">
 
+
                     <!-- Project 01 -->
-                    <article class="project-card">
+
+                    <article class="project-card reveal">
 
                         <div class="project-image project-image-one">
-
-                            <div class="project-overlay">
-
-                                <a href="#" class="project-link">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
 
                             <span class="project-index">
                                 01
                             </span>
+
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="#"
+                                    class="project-link"
+                                    aria-label="مشاهدة المشروع"
+                                >
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </div>
 
                         </div>
 
 
                         <div class="project-content">
 
-                            <div class="project-category">
+                            <span class="project-category">
                                 Web Development
-                            </div>
+                            </span>
 
                             <h3>
-                                Modern Portfolio
+                                Portfolio Website
                             </h3>
 
                             <p>
-                                موقع Portfolio حديث ومتجاوب
-                                لعرض المهارات والمشاريع والخدمات.
+
+                                موقع Portfolio عصري لعرض
+                                المهارات والخدمات والمشاريع
+                                بطريقة منظمة.
+
                             </p>
 
+
                             <div class="project-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+
+                                <span>
+                                    HTML
+                                </span>
+
+                                <span>
+                                    CSS
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
                             </div>
 
                         </div>
@@ -958,43 +1498,66 @@
 
 
                     <!-- Project 02 -->
-                    <article class="project-card">
+
+                    <article class="project-card reveal">
 
                         <div class="project-image project-image-two">
-
-                            <div class="project-overlay">
-
-                                <a href="#" class="project-link">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
 
                             <span class="project-index">
                                 02
                             </span>
+
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="#"
+                                    class="project-link"
+                                    aria-label="مشاهدة المشروع"
+                                >
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </div>
 
                         </div>
 
 
                         <div class="project-content">
 
-                            <div class="project-category">
-                                Discord Bot
-                            </div>
+                            <span class="project-category">
+                                Discord Development
+                            </span>
 
                             <h3>
                                 Discord Management Bot
                             </h3>
 
                             <p>
-                                بوت Discord لإدارة السيرفرات
-                                وتنظيم المجتمع وتوفير أنظمة متعددة.
+
+                                نظام بوت لإدارة السيرفرات
+                                والأوامر والمهام المتكررة
+                                بطريقة منظمة.
+
                             </p>
 
+
                             <div class="project-tags">
-                                <span>Discord.js</span>
-                                <span>Node.js</span>
+
+                                <span>
+                                    Discord
+                                </span>
+
+                                <span>
+                                    Python
+                                </span>
+
+                                <span>
+                                    API
+                                </span>
+
                             </div>
 
                         </div>
@@ -1003,43 +1566,66 @@
 
 
                     <!-- Project 03 -->
-                    <article class="project-card">
+
+                    <article class="project-card reveal">
 
                         <div class="project-image project-image-three">
-
-                            <div class="project-overlay">
-
-                                <a href="#" class="project-link">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
-                            </div>
 
                             <span class="project-index">
                                 03
                             </span>
+
+
+                            <div class="project-overlay">
+
+                                <a
+                                    href="#"
+                                    class="project-link"
+                                    aria-label="مشاهدة المشروع"
+                                >
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                                </a>
+
+                            </div>
 
                         </div>
 
 
                         <div class="project-content">
 
-                            <div class="project-category">
-                                Telegram Bot
-                            </div>
+                            <span class="project-category">
+                                Telegram Development
+                            </span>
 
                             <h3>
-                                Telegram Automation
+                                Telegram Automation Bot
                             </h3>
 
                             <p>
-                                بوت Telegram مخصص للأتمتة وإدارة
-                                الخدمات وتنفيذ المهام تلقائياً.
+
+                                بوت Telegram للأتمتة وتنفيذ
+                                المهام والتعامل مع الخدمات
+                                البرمجية الخارجية.
+
                             </p>
 
+
                             <div class="project-tags">
-                                <span>Python</span>
-                                <span>Telegram API</span>
+
+                                <span>
+                                    Telegram
+                                </span>
+
+                                <span>
+                                    Python
+                                </span>
+
+                                <span>
+                                    Automation
+                                </span>
+
                             </div>
 
                         </div>
@@ -1053,15 +1639,17 @@
         </section>
 
 
+        <!-- =================================================
+             Social Media
+             ================================================= -->
 
-        <!-- =========================
-             Social Section
-        ========================== -->
         <section class="social-section section">
 
             <div class="container">
 
-                <div class="social-box">
+
+                <div class="social-box reveal">
+
 
                     <div class="social-box-text">
 
@@ -1070,12 +1658,15 @@
                         </span>
 
                         <h2>
-                            يمكنك العثور علي هنا
+                            تواصل معي على المنصات
                         </h2>
 
                         <p>
-                            تابع أعمالي ومشاريعي وتحديثاتي
-                            من خلال حساباتي على منصات التواصل.
+
+                            يمكنك العثور علي ومتابعة أعمالي
+                            وتحديثاتي من خلال منصات التواصل
+                            المختلفة.
+
                         </p>
 
                     </div>
@@ -1083,64 +1674,76 @@
 
                     <div class="social-platforms">
 
+
                         <a
                             href="#"
                             class="platform discord-platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
+
                             <i class="fa-brands fa-discord"></i>
-                            <span>Discord</span>
+
+                            Discord
+
                         </a>
+
 
                         <a
                             href="#"
                             class="platform telegram-platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
+
                             <i class="fa-brands fa-telegram"></i>
-                            <span>Telegram</span>
+
+                            Telegram
+
                         </a>
+
 
                         <a
                             href="#"
                             class="platform github-platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
+
                             <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
+
+                            GitHub
+
                         </a>
+
 
                         <a
                             href="#"
                             class="platform facebook-platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
-                            <i class="fa-brands fa-facebook"></i>
-                            <span>Facebook</span>
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                            Facebook
+
                         </a>
+
 
                         <a
                             href="#"
                             class="platform x-platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
+
                             <i class="fa-brands fa-x-twitter"></i>
-                            <span>X</span>
+
+                            X / Twitter
+
                         </a>
+
 
                         <a
                             href="#"
                             class="platform instagram-platform"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
+
                             <i class="fa-brands fa-instagram"></i>
-                            <span>Instagram</span>
+
+                            Instagram
+
                         </a>
 
                     </div>
@@ -1152,97 +1755,155 @@
         </section>
 
 
+        <!-- =================================================
+             Contact
+             ================================================= -->
 
-        <!-- =========================
-             Contact Section
-        ========================== -->
-        <section class="contact section" id="contact">
+        <section
+            class="contact section"
+            id="contact"
+        >
 
             <div class="container">
 
-                <div class="section-heading">
+
+                <div class="section-heading reveal">
 
                     <span class="section-number">
                         05
                     </span>
 
+
                     <div>
 
                         <span class="section-label">
-                            تواصل معي
+                            CONTACT
                         </span>
 
                         <h2 class="section-title">
-                            لنبدأ مشروعاً جديداً
+                            لنبنِ شيئًا معًا
                         </h2>
 
                     </div>
+
+
+                    <p class="section-description">
+
+                        لديك فكرة أو مشروع؟
+                        أرسل التفاصيل وسأتواصل معك.
+
+                    </p>
 
                 </div>
 
 
                 <div class="contact-content">
 
+
                     <!-- Contact Info -->
-                    <div class="contact-info">
+
+                    <div class="contact-info reveal">
 
                         <h3>
-                            هل لديك فكرة أو مشروع؟
+                            هل لديك مشروع؟
                         </h3>
 
+
                         <p>
-                            إذا كنت تبحث عن مبرمج لتطوير موقع،
-                            أو بوت Discord أو Telegram، أو تحتاج
-                            إلى تصميم لمشروعك، يمكنك التواصل معي.
+
+                            أخبرني عن فكرتك، وسأساعدك في
+                            تحويلها إلى موقع، بوت أو تجربة
+                            رقمية مناسبة لاحتياجاتك.
+
                         </p>
 
 
                         <div class="contact-items">
 
-                            <a href="mailto:example@email.com" class="contact-item">
 
-                                <div class="contact-icon">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </div>
+                            <!-- Telegram -->
 
-                                <div>
-                                    <span>البريد الإلكتروني</span>
-                                    <strong>
-                                        example@email.com
-                                    </strong>
-                                </div>
+                            <a
+                                href="#"
+                                class="contact-item"
+                            >
 
-                            </a>
+                                <span class="contact-icon telegram-contact">
 
-
-                            <a href="#" class="contact-item">
-
-                                <div class="contact-icon telegram-contact">
                                     <i class="fa-brands fa-telegram"></i>
-                                </div>
 
-                                <div>
-                                    <span>Telegram</span>
+                                </span>
+
+
+                                <span>
+
+                                    <span>
+                                        Telegram
+                                    </span>
+
                                     <strong>
                                         @username
                                     </strong>
-                                </div>
+
+                                </span>
 
                             </a>
 
 
-                            <a href="#" class="contact-item">
+                            <!-- Discord -->
 
-                                <div class="contact-icon discord-contact">
+                            <a
+                                href="#"
+                                class="contact-item"
+                            >
+
+                                <span class="contact-icon discord-contact">
+
                                     <i class="fa-brands fa-discord"></i>
-                                </div>
 
-                                <div>
-                                    <span>Discord</span>
+                                </span>
+
+
+                                <span>
+
+                                    <span>
+                                        Discord
+                                    </span>
+
                                     <strong>
-                                        Mohammed
+                                        username
                                     </strong>
-                                </div>
+
+                                </span>
+
+                            </a>
+
+
+                            <!-- Email -->
+
+                            <a
+                                href="mailto:hello@example.com"
+                                class="contact-item"
+                            >
+
+                                <span class="contact-icon">
+
+                                    <i class="fa-regular fa-envelope"></i>
+
+                                </span>
+
+
+                                <span>
+
+                                    <span>
+                                        Email
+                                    </span>
+
+                                    <strong>
+                                        hello@example.com
+                                    </strong>
+
+                                </span>
 
                             </a>
 
@@ -1252,14 +1913,14 @@
 
 
                     <!-- Contact Form -->
+
                     <form
-                        class="contact-form"
-                        id="contactForm"
-                        action="#"
-                        method="POST"
+                        class="contact-form reveal"
                     >
 
+
                         <div class="form-row">
+
 
                             <div class="form-group">
 
@@ -1268,11 +1929,10 @@
                                 </label>
 
                                 <input
-                                    type="text"
                                     id="name"
                                     name="name"
+                                    type="text"
                                     placeholder="اكتب اسمك"
-                                    autocomplete="name"
                                     required
                                 >
 
@@ -1286,11 +1946,10 @@
                                 </label>
 
                                 <input
-                                    type="email"
                                     id="email"
                                     name="email"
+                                    type="email"
                                     placeholder="example@email.com"
-                                    autocomplete="email"
                                     required
                                 >
 
@@ -1306,10 +1965,10 @@
                             </label>
 
                             <input
-                                type="text"
                                 id="subject"
                                 name="subject"
-                                placeholder="موضوع الرسالة"
+                                type="text"
+                                placeholder="ما نوع المشروع؟"
                                 required
                             >
 
@@ -1325,7 +1984,6 @@
                             <textarea
                                 id="message"
                                 name="message"
-                                rows="7"
                                 placeholder="اكتب تفاصيل مشروعك هنا..."
                                 required
                             ></textarea>
@@ -1334,14 +1992,14 @@
 
 
                         <button
-                            type="submit"
                             class="btn btn-primary form-submit"
+                            type="submit"
                         >
-                            <span>
-                                إرسال الرسالة
-                            </span>
 
-                            <i class="fa-regular fa-paper-plane"></i>
+                            إرسال الرسالة
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
                         </button>
 
                     </form>
@@ -1355,33 +2013,51 @@
     </main>
 
 
-
-    <!-- =========================
+    <!-- =====================================================
          Footer
-    ========================== -->
+         ===================================================== -->
+
     <footer class="footer">
 
         <div class="container">
 
+
             <div class="footer-content">
 
+
                 <!-- Footer Brand -->
+
                 <div class="footer-brand">
 
-                    <a href="#home" class="logo">
-                        <span class="logo-symbol">&lt;/&gt;</span>
-                        <span class="logo-name">MOHAMMED</span>
+                    <a
+                        href="#home"
+                        class="logo"
+                    >
+
+                        <span class="logo-symbol">
+                            M
+                        </span>
+
+                        <span class="logo-name">
+                            MOHAMMED
+                        </span>
+
                     </a>
 
+
                     <p>
-                        مبرمج مواقع، مطور بوتات Discord وTelegram،
-                        ومصمم.
+
+                        مبرمج مواقع وبوتات Discord وTelegram
+                        ومصمم يهتم ببناء مشاريع رقمية بسيطة
+                        وعملية.
+
                     </p>
 
                 </div>
 
 
                 <!-- Footer Links -->
+
                 <div class="footer-links">
 
                     <a href="#home">
@@ -1405,61 +2081,80 @@
                     </a>
 
                     <a href="#contact">
-                        التواصل
+                        تواصل
                     </a>
 
                 </div>
 
 
                 <!-- Footer Social -->
+
                 <div class="footer-social">
+
 
                     <a
                         href="#"
                         class="discord"
                         aria-label="Discord"
                     >
+
                         <i class="fa-brands fa-discord"></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         class="telegram"
                         aria-label="Telegram"
                     >
+
                         <i class="fa-brands fa-telegram"></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         class="github"
                         aria-label="GitHub"
                     >
+
                         <i class="fa-brands fa-github"></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         class="facebook"
                         aria-label="Facebook"
                     >
-                        <i class="fa-brands fa-facebook"></i>
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         class="x-twitter"
                         aria-label="X"
                     >
+
                         <i class="fa-brands fa-x-twitter"></i>
+
                     </a>
+
 
                     <a
                         href="#"
                         class="instagram"
                         aria-label="Instagram"
                     >
+
                         <i class="fa-brands fa-instagram"></i>
+
                     </a>
 
                 </div>
@@ -1467,18 +2162,32 @@
             </div>
 
 
+            <!-- Footer Bottom -->
+
             <div class="footer-bottom">
 
-                <p>
-                    © <span id="currentYear"></span>
-                    Mohammed. جميع الحقوق محفوظة.
-                </p>
+                <span>
 
-                <p>
-                    صُنع بـ
+                    ©
+                    <span data-year>
+                        2026
+                    </span>
+
+                    Mohammed.
+                    All rights reserved.
+
+                </span>
+
+
+                <span>
+
+                    Designed & Developed with
+
                     <i class="fa-solid fa-heart"></i>
-                    وشغف بالبرمجة
-                </p>
+
+                    by Mohammed
+
+                </span>
 
             </div>
 
@@ -1487,25 +2196,31 @@
     </footer>
 
 
-
-    <!-- =========================
+    <!-- =====================================================
          Back To Top
-    ========================== -->
+         ===================================================== -->
+
     <button
         class="back-to-top"
-        id="backToTop"
-        aria-label="العودة إلى الأعلى"
+        type="button"
+        aria-label="العودة للأعلى"
     >
+
         <i class="fa-solid fa-arrow-up"></i>
+
     </button>
 
 
+    <!-- =====================================================
+         JavaScript
+         ===================================================== -->
 
-    <!-- =========================
-         Main JavaScript
-    ========================== -->
+    <script src="assets/js/particles.js"></script>
+
     <script src="assets/js/script.js"></script>
 
+
 </body>
+
 </html>
 ```
